@@ -10,16 +10,16 @@ import "styles/layout.scss";
 
 $(() => {
 	ReactDOM.createRoot( document.getElementById("app") )
-	.render(
-		<Router>
-			<Header />
-			<main className="b-main">
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="*" element={<NotFound />} />
-				</Routes>
-			</main>
-			<Footer />
-		</Router>
-	);
+		.render(
+			<Router>
+				<Header />
+				<main className="b-main">
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="*" element={<NotFound />} />
+					</Routes>
+				</main>
+				<Footer />
+			</Router>
+		);
 });

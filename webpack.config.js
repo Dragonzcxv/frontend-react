@@ -57,7 +57,12 @@ const common = merge([
 			new MiniCssExtractPlugin({
 				filename: FilenameTemplate('css/[name].css'),
 			}),
-			new ESLintPlugin(),
+			new ESLintPlugin({
+				extensions: [
+					'js',
+					'jsx'
+				]
+			}),
 			new StyleLintPlugin(),
 			new webpack.ProvidePlugin({
 				$: 'jquery',
