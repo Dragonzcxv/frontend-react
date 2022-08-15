@@ -6,7 +6,7 @@ import Footer from "components/site/footer/Footer";
 import Home from "components/pages/home/Home";
 import NotFound from "components/pages/not-found/NotFound";
 import "normalize.css";
-import "styles/layout.scss";
+import "styles/layout/index";
 
 $(() => {
 	ReactDOM.createRoot( document.getElementById("app") )
