@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "components/site/header/Header";
 import Footer from "components/site/footer/Footer";
 import Home from "components/pages/home/Home";
+import Example from "components/pages/example/Example";
 import NotFound from "components/pages/not-found/NotFound";
 import "normalize.css";
 import "styles/layout/index";
@@ -17,6 +18,7 @@ $(() => {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="*" element={<NotFound />} />
+						<Route path="/example/" element={<Example />} />
 					</Routes>
 				</main>
 				<Footer />

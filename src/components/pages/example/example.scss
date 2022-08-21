@@ -1,0 +1,17 @@
+@import "styles/styles";
+
+$block-name: "b-example";
+
+.#{$block-name} {
+	&__stretch-all {
+		//
+	}
+
+	&__stretch-left {
+		text-align: left;
+	}
+
+	&__stretch-right {
+		text-align: right;
+	}
+}
